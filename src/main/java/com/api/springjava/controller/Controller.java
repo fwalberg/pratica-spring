@@ -1,7 +1,11 @@
 package com.api.springjava.controller;
 
+import com.api.springjava.model.Pessoa;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -17,5 +21,10 @@ public class Controller {
     @GetMapping("/boasVindas/{nome}")
     public String boasVindas(@PathVariable String nome) {
         return "Bem vindo ao Spring Boot com Java, " + nome;
-    }   
+    }
+    
+    @PostMapping("/pessoa")
+    public Pessoa pessoa(@RequestBody Pessoa pessoa) {
+        return pessoa;
+    }
 }
