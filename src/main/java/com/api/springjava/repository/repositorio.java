@@ -3,9 +3,9 @@ package com.api.springjava.repository;
 import com.api.springjava.model.Pessoa;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-
-
-public interface Repository extends CrudRepository<Pessoa, Integer> {
+@Repository
+public interface repositorio extends CrudRepository<Pessoa, Integer> {
     
 }

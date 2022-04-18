@@ -15,7 +15,7 @@ public class Controller {
 
     @GetMapping("") // Marca o método como uma rota com requisição GET.
     public String mensagem() {
-        return "Hello Spring!!!";
+        return "Welcome to Spring!!!";
     }
 
     @GetMapping("/boasVindas/{nome}")
