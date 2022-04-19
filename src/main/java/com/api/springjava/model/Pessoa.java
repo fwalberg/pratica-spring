@@ -35,7 +35,7 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public int getidade() {
+    public int getIdade() {
         return idade;
     }
 }
