@@ -78,10 +78,16 @@ public class Controller {
         return acao.findByNomeEndsWith("s");
     }
 
+    @GetMapping("/api/somaIdades")
+    public int somarIdades() {
+        return acao.somaIdades();
+    }
+
+    @GetMapping("/api/idadeMaiorIgual")
+    public List<Pessoa> idadeMariorIgual() {
+        return acao.idadeMaiorIgual(18);
+    }
     
-
-
-
     //##############################################################################
 
     @GetMapping("") // Marca o método como uma rota com requisição GET.
